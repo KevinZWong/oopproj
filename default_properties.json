@@ -1,0 +1,34 @@
+{
+    "ParkPlace": {
+        "Status": 0,
+        "Owner": "",
+        "Price": 350,
+        "HouseCost": 200,
+        "HotelCost": 200,
+        "Rent": 35,
+        "RentWithColorSet": 70,
+        "RentWith1House": 175,
+        "RentWith2House": 500,
+        "RentWith3House": 1100,
+        "RentWith4House": 1300,
+        "RentWith1Hotel": 1500,
+        "MortgateValue": 175,
+        "UnmortgatePay": 193
+    }, 
+    "Boardwalk": {
+        "Status": 0,
+        "Owner": "",
+        "Price": 400,
+        "HouseCost": 200,
+        "HotelCost": 200,
+        "Rent": 35,
+        "RentWithColorSet": 70,
+        "RentWith1House": 175,
+        "RentWith2House": 500,
+        "RentWith3House": 1100,
+        "RentWith4House": 1300,
+        "RentWith1Hotel": 1500,
+        "MortgateValue": 175,
+        "UnmortgatePay": 193
+    }
+}
