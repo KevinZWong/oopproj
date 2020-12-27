@@ -2,6 +2,29 @@ import json
 from Property import Property as Props
 from Players import Players
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
 class MonopolyMgr:
     def __init__(self):
         self.players = []
@@ -21,3 +44,4 @@ class MonopolyMgr:
     
     def startTheGame(self):
         pass
+'''

@@ -1,0 +1,22 @@
+    def addPlayer(self, playerName):
+    def listCurentPlayers(self):
+    def addProperty(self, playerName, property):
+    def updateRollDiceOrder(self, playerName, orderNum):
+    def updateJailStatus(self, playerName, JailStatus):
+    def updateIcon(self, playerName, icon):
+    def updatePosition(self, playerName, position):
+    def reorderPlayersAsItWasSet(self):
+
+
+
+
+
+
+
+
+
+
+
+
+
+

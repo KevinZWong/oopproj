@@ -3,8 +3,8 @@
     "Amount": 0,
     "PropertyOwned": [],
     "RollDiceOrder": 0,
-    "JailFlag": false,
-    "icon": 0,
-    "CurrentPosition": 0
+    "JailStatus": 0,
+    "Icon": 0,
+    "CurrentPosition": ""
 }
 
