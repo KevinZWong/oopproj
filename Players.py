@@ -7,11 +7,9 @@ class Players:
     def __init__(self):
         self.players = []
 
-    '''
     def __del__(self):
         with open("./SaveBeforeClosePlayers.json", 'w') as json_file:
             json.dump(self.players, json_file)
-    '''
 
     def addPlayer(self, playerName):
         with open("./default_player.json") as f:
