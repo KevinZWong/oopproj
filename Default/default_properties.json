@@ -12,8 +12,8 @@
         "RentWith3House": 90,
         "RentWith4House": 160,
         "RentWithHotel": 250,
-        "MortgateValue": 30,
-        "UnmortgatePay": 33
+        "MortgageValue": 30,
+        "UnmortgageValue": 33
     },
 
     "Baltic_Avenue": {
@@ -29,8 +29,8 @@
         "RentWith3House": 180,
         "RentWith4House": 320,
         "RentWithHotel": 450,
-        "MortgateValue": 30,
-        "UnmortgatePay": 33
+        "MortgageValue": 30,
+        "UnmortgageValue": 33
     },
 
     "Oriental_Avenue": {
@@ -46,8 +46,8 @@
         "RentWith3House": 270,
         "RentWith4House": 400,
         "RentWithHotel": 550,
-        "MortgateValue": 50,
-        "UnmortgatePay": 55
+        "MortgageValue": 50,
+        "UnmortgageValue": 55
     },
 
     "Vermont_Avenue": {
@@ -63,8 +63,8 @@
         "RentWith3House": 270,
         "RentWith4House": 400,
         "RentWithHotel": 550,
-        "MortgateValue": 50,
-        "UnmortgatePay": 55
+        "MortgageValue": 50,
+        "UnmortgageValue": 55
     },
 
     "Connecticut_Avenue": {
@@ -80,8 +80,8 @@
         "RentWith3House": 300,
         "RentWith4House": 450,
         "RentWithHotel": 600,
-        "MortgateValue": 60,
-        "UnmortgatePay": 66
+        "MortgageValue": 60,
+        "UnmortgageValue": 66
     },
 
     "St._Charles_Place": {
@@ -97,8 +97,8 @@
         "RentWith3House": 450,
         "RentWith4House": 625,
         "RentWithHotel": 750,
-        "MortgateValue": 70,
-        "UnmortgatePay": 77
+        "MortgageValue": 70,
+        "UnmortgageValue": 77
     },
 
     "States_Avenue": {
@@ -114,8 +114,8 @@
         "RentWith3House": 450,
         "RentWith4House": 625,
         "RentWithHotel": 750,
-        "MortgateValue": 70,
-        "UnmortgatePay": 77
+        "MortgageValue": 70,
+        "UnmortgageValue": 77
     },
 
     "Virginia_Avenue": {
@@ -131,8 +131,8 @@
         "RentWith3House": 500,
         "RentWith4House": 700,
         "RentWithHotel": 900,
-        "MortgateValue": 80,
-        "UnmortgatePay": 88
+        "MortgageValue": 80,
+        "UnmortgageValue": 88
     },
 
     "St._James_Place": {
@@ -148,8 +148,8 @@
         "RentWith3House": 550,
         "RentWith4House": 750,
         "RentWithHotel": 950,
-        "MortgateValue": 90,
-        "UnmortgatePay": 99
+        "MortgageValue": 90,
+        "UnmortgageValue": 99
     },
 
     "Tennessee_Avenue": {
@@ -165,8 +165,8 @@
         "RentWith3House": 550,
         "RentWith4House": 750,
         "RentWithHotel": 950,
-        "MortgateValue": 90,
-        "UnmortgatePay": 99
+        "MortgageValue": 90,
+        "UnmortgageValue": 99
     },
 
     "New_York_Avenue": {
@@ -182,8 +182,8 @@
         "RentWith3House": 600,
         "RentWith4House": 800,
         "RentWithHotel": 1000,
-        "MortgateValue": 100,
-        "UnmortgatePay": 110
+        "MortgageValue": 100,
+        "UnmortgageValue": 110
     },
 
     "Kentucky_Avenue": {
@@ -199,8 +199,8 @@
         "RentWith3House": 700,
         "RentWith4House": 875,
         "RentWithHotel": 1050,
-        "MortgateValue": 110,
-        "UnmortgatePay": 121
+        "MortgageValue": 110,
+        "UnmortgageValue": 121
     },
 
     "Indiana_Avenue": {
@@ -216,8 +216,8 @@
         "RentWith3House": 700,
         "RentWith4House": 875,
         "RentWithHotel": 1050,
-        "MortgateValue": 110,
-        "UnmortgatePay": 121
+        "MortgageValue": 110,
+        "UnmortgageValue": 121
     },
 
     "Illinois_Avenue": {
@@ -233,8 +233,8 @@
         "RentWith3House": 750,
         "RentWith4House": 925,
         "RentWithHotel": 1100,
-        "MortgateValue": 120,
-        "UnmortgatePay": 132
+        "MortgageValue": 120,
+        "UnmortgageValue": 132
     },
 
     "Atlantic_Avenue": {
@@ -250,8 +250,8 @@
         "RentWith3House": 800,
         "RentWith4House": 975,
         "RentWithHotel": 1150,
-        "MortgateValue": 130,
-        "UnmortgatePay": 143
+        "MortgageValue": 130,
+        "UnmortgageValue": 143
     },
 
     "Ventnor_Avenue": {
@@ -267,8 +267,8 @@
         "RentWith3House": 800,
         "RentWith4House": 975,
         "RentWithHotel": 1150,
-        "MortgateValue": 130,
-        "UnmortgatePay": 143
+        "MortgageValue": 130,
+        "UnmortgageValue": 143
     },
 
     "Marvin_Gardens": {
@@ -284,8 +284,8 @@
         "RentWith3House": 850,
         "RentWith4House": 1025,
         "RentWithHotel": 1200,
-        "MortgateValue": 140,
-        "UnmortgatePay": 154
+        "MortgageValue": 140,
+        "UnmortgageValue": 154
     },
 
 
@@ -302,8 +302,8 @@
         "RentWith3House": 900,
         "RentWith4House": 1100,
         "RentWithHotel": 1275,
-        "MortgateValue": 150,
-        "UnmortgatePay": 165
+        "MortgageValue": 150,
+        "UnmortgageValue": 165
     },
 
     "North_Carolina_Avenue": {
@@ -319,8 +319,8 @@
         "RentWith3House": 900,
         "RentWith4House": 1100,
         "RentWithHotel": 1275,
-        "MortgateValue": 150,
-        "UnmortgatePay": 165
+        "MortgageValue": 150,
+        "UnmortgageValue": 165
     },
 
     "Pennsylvania_Avenue": {
@@ -336,8 +336,8 @@
         "RentWith3House": 1000,
         "RentWith4House": 1200,
         "RentWithHotel": 1400,
-        "MortgateValue": 160,
-        "UnmortgatePay": 176
+        "MortgageValue": 160,
+        "UnmortgageValue": 176
     },
     "Park_Place": {
         "Status": 0,
@@ -352,8 +352,8 @@
         "RentWith3House": 1100,
         "RentWith4House": 1300,
         "RentWithHotel": 1500,
-        "MortgateValue": 175,
-        "UnmortgatePay": 193
+        "MortgageValue": 175,
+        "UnmortgageValue": 193
     }, 
     "Boardwalk": {
         "Status": 0,
@@ -368,8 +368,8 @@
         "RentWith3House": 1400,
         "RentWith4House": 1700,
         "RentWithHotel": 2000,
-        "MortgateValue": 200,
-        "UnmortgatePay": 220
+        "MortgageValue": 200,
+        "UnmortgageValue": 220
     },
     "Pennsylvania_Railroad": {
         "Status": 0,
@@ -381,8 +381,8 @@
         "RentWith2Railroad": 50,
         "RentWith3Railroad": 100,
         "RentWith4Railroad": 200,
-        "MortgateValue": 100,
-        "UnmortgatePay": 110
+        "MortgageValue": 100,
+        "UnmortgageValue": 110
     },
     "Short_Line": {
         "Status": 0,
@@ -394,8 +394,8 @@
         "RentWith2Railroad": 50,
         "RentWith3Railroad": 100,
         "RentWith4Railroad": 200,
-        "MortgateValue": 100,
-        "UnmortgatePay": 110
+        "MortgageValue": 100,
+        "UnmortgageValue": 110
     },
     "B._&_O._Railroad": {
         "Status": 0,
@@ -407,8 +407,8 @@
         "RentWith2Railroad": 50,
         "RentWith3Railroad": 100,
         "RentWith4Railroad": 200,
-        "MortgateValue": 100,
-        "UnmortgatePay": 110
+        "MortgageValue": 100,
+        "UnmortgageValue": 110
     },
     "Reading_Railroad": {
         "Status": 0,
@@ -420,8 +420,8 @@
         "RentWith2Railroad": 50,
         "RentWith3Railroad": 100,
         "RentWith4Railroad": 200,
-        "MortgateValue": 100,
-        "UnmortgatePay": 110
+        "MortgageValue": 100,
+        "UnmortgageValue": 110
     },
     "Water_Works": {
         "Status": 0,
@@ -431,8 +431,8 @@
         "Roll": 0,
         "RentWith1Utility": "roll * 4",
         "RentWith2Utility": "roll * 10",
-        "MortgateValue": 200,
-        "UnmortgatePay": 220
+        "MortgageValue": 200,
+        "UnmortgageValue": 220
     },
     "Electric_Company": {
         "Status": 0,
@@ -442,7 +442,7 @@
         "Roll": 0,
         "RentWith1Utility": "roll * 4",
         "RentWith2Utility": "roll * 10",
-        "MortgateValue": 200,
-        "UnmortgatePay": 220
+        "MortgageValue": 200,
+        "UnmortgageValue": 220
     }
 }

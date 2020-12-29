@@ -1,25 +1,44 @@
 import json
 import copy
 
-START_FUND = 1500
+
 
 class Players:
     def __init__(self):
         self.players = []
 
     def __del__(self):
-        with open("./SaveBeforeClosePlayers.json", 'w') as json_file:
+        with open("./SaveBeforeClose/SaveBeforeClosePlayers.json", 'w') as json_file:
             json.dump(self.players, json_file)
 
     def addPlayer(self, playerName):
-        with open("./default_player.json") as f:
+        with open("./Default/default_player.json") as f:
             newPlayer = json.load(f)
             newPlayer["Name"] = playerName
-            newPlayer["Amount"] = START_FUND
+            newPlayer["Amount"] = 1500
             self.players.append(newPlayer)
+
+    def loadPreviousSaveData(self):
+        with open("./SaveBeforeClose/SaveBeforeClosePlayers.json", 'r') as json_file:
+            self.players = json.load(json_file)    
 
     def listCurentPlayers(self):
         print("this.players = ", self.players)
+
+    def setAmount(self, playerName, newAmount):
+        for player in self.players:
+            if player["Name"] == playerName:
+                var1 = player["Amount"]
+                player["Amount"] = newAmount
+
+    def getAmount(self, playerName):
+        for player in self.players:
+            if player["Name"] == playerName:
+                return player["Amount"]
+
+
+    def getPlayerslist(self):
+        return self.players
 
     def addProperty(self, playerName, property):
         for player in self.players:
@@ -65,14 +84,9 @@ def main():
     player = Players()
     print("\n A")
     player.addPlayer("kevin")
-    player.listCurentPlayers()
-    player.updateJailStatus("kevin",1)
-    player.updateRollDiceOrder("kevin", 2)
-    player.addProperty("kevin","Park Place")
-    player.addProperty("kevin","Boardwalk")
-    player.listCurentPlayers()
-
-    '''
+    player.setAmount("kevin", 1400)
+    print(player.getPlayerslist())
+    
     player = Players()
     player.addPlayer("guo")
     player.listCurentPlayers()  
@@ -103,7 +117,7 @@ def main():
     player.reorderPlayersAsItWasSet()
     print("\n C")
     player.listCurentPlayers()
-    '''
+
 
 if __name__ == "__main__":
     print("To run Players class directly")

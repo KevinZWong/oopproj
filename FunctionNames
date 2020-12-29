@@ -1,5 +1,9 @@
+Players Class:
     def addPlayer(self, playerName):
     def listCurentPlayers(self):
+    def setAmount(self, playerName, newAmount):
+    def getAmount(self, playerName, newAmount):
+    def getPlayerslist(self):
     def addProperty(self, playerName, property):
     def updateRollDiceOrder(self, playerName, orderNum):
     def updateJailStatus(self, playerName, JailStatus):

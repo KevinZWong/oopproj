@@ -3,7 +3,11 @@ from Property import Property as Props
 from Players import Players
 
 
-
+player = Players()
+print("\n A")
+player.addPlayer("alan")
+player.setAmount("alan", 1400)
+print(player.getPlayerslist())
 
 
 
