@@ -10,6 +10,9 @@ class Property:
 
         self.player = Players()
         self.player.loadPreviousSaveData()
+        print("kevin")
+        self.player.listCurentPlayers()
+        print("wong")
 
     def __del__(self):
         with open("./SaveBeforeClose/SaveBeforeCloseProperties.json", 'w') as json_file:
@@ -37,9 +40,9 @@ class Property:
         return self.Properties[propertyName]["UnmortgageValue"]
 
     def BuyProperty(self, propertyName, FutureOwner):
-        propertyPrice = self.player.getAmount(propertyName)
+        FutureOwnerMoney = self.player.getAmount(FutureOwner)
         print("guo")
-        print(propertyPrice)
+        print(FutureOwnerMoney)
         print("wong")
 
         
@@ -47,7 +50,7 @@ class Property:
 
 def main():
     property = Property() 
-    
+
     print(property.MortgageValue("Boardwalk"))
     property.BuyProperty("Boardwalk","kevin")
 

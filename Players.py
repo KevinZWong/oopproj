@@ -82,41 +82,40 @@ class Players:
 
 def main():
     player = Players()
-    print("\n A")
+    #print("\n A")
     player.addPlayer("kevin")
     player.setAmount("kevin", 1400)
-    print(player.getPlayerslist())
-    
-    player = Players()
+    #print(player.getPlayerslist())
+        player = Players()
     player.addPlayer("guo")
-    player.listCurentPlayers()  
-    print("\n A")
+    #player.listCurentPlayers()  
+    #print("\n A")
     player.addPlayer("alan")
-    player.listCurentPlayers() 
+    #player.listCurentPlayers() 
 
-    print("\n A")
+    #print("\n A")
     player.addPlayer("kevin")
-    player.listCurentPlayers()
+    #player.listCurentPlayers()
 
 
-    print("\n B")
+    #print("\n B")
     player.updateRollDiceOrder("kevin", 1)
-    player.listCurentPlayers()
-    print("\n B")
+    #player.listCurentPlayers()
+    #print("\n B")
 
     player.updateRollDiceOrder("alan", 2)
-    player.listCurentPlayers()
-    print("\n B")
+    #player.listCurentPlayers()
+    #print("\n B")
 
     player.updateRollDiceOrder("guo", 3)
-    player.listCurentPlayers()
-    print("\n B")
+    #player.listCurentPlayers()
+    #print("\n B")
 
 
-    print("\n C")
+    #print("\n C")
     player.reorderPlayersAsItWasSet()
-    print("\n C")
-    player.listCurentPlayers()
+    #print("\n C")
+    #player.listCurentPlayers()
 
 
 if __name__ == "__main__":
