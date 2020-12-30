@@ -1,5 +1,5 @@
 import json
-
+import atexit
 
 # See:  https://www.tutorialspoint.com/python_design_patterns/python_design_patterns_singleton.htm
 class SingletonPlayers:
@@ -19,9 +19,14 @@ class SingletonPlayers:
             SingletonPlayers.__instance = self
         self.players = []
         self.START_FUND = 1500
+        atexit.register(self.saveBeforeClose)
+
+    def saveBeforeClose(self):
+        with open("./SaveBeforeClose/SaveBeforeClosePlayers.json", 'w') as json_file:
+            json.dump(self.players, json_file)
 
     def addPlayer(self, playerName):
-        with open("./default_player.json") as f:
+        with open("./Default/default_player.json") as f:
             newPlayer = json.load(f)
             newPlayer["Name"] = playerName
             newPlayer["Amount"] = self.START_FUND
