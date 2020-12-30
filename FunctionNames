@@ -2,7 +2,7 @@ Players Class:
     def addPlayer(self, playerName):
     def listCurentPlayers(self):
     def setAmount(self, playerName, newAmount):
-    def getAmount(self, playerName, newAmount):
+    def getAmount(self, playerName):
     def getPlayerslist(self):
     def addProperty(self, playerName, property):
     def updateRollDiceOrder(self, playerName, orderNum):
@@ -10,16 +10,16 @@ Players Class:
     def updateIcon(self, playerName, icon):
     def updatePosition(self, playerName, position):
     def reorderPlayersAsItWasSet(self):
-
-
-
-
-
-
-
-
-
-
+Property Class:
+    def getPrice(self, propertyName):
+    def setOwner(self, propertyName, owner):
+    def getOwner(self, propertyName):
+    def saveCurStateInJson(self, filePathName):
+    def getHouseCost(self, propertyName):
+    def MortgageValue(self, propertyName):
+    def UnmortgageValue(self, propertyName):
+    def BuyProperty(self, propertyName, FutureOwner):
+Property Class:
 
 
 

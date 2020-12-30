@@ -5,14 +5,8 @@ class Property:
     def __init__(self, jsonFilePath="./Default/default_properties.json"):
         with open(jsonFilePath) as f:
             self.Properties = json.load(f)
-
-        print(self.Properties)
-
         self.player = Players()
         self.player.loadPreviousSaveData()
-        print("kevin")
-        self.player.listCurentPlayers()
-        print("wong")
 
     def __del__(self):
         with open("./SaveBeforeClose/SaveBeforeCloseProperties.json", 'w') as json_file:
@@ -41,19 +35,25 @@ class Property:
 
     def BuyProperty(self, propertyName, FutureOwner):
         FutureOwnerMoney = self.player.getAmount(FutureOwner)
-        print("guo")
-        print(FutureOwnerMoney)
-        print("wong")
+        PropPrice = self.getPrice(propertyName)
+        if FutureOwnerMoney >= PropPrice:
+            newAmount = FutureOwnerMoney - PropPrice
+            self.player.setAmount(FutureOwner,newAmount)
+            self.player.addProperty(FutureOwner,propertyName)
+        else:
+            print("Not enough money, L. git more monay")
+            return
 
+    
         
 
 
 def main():
     property = Property() 
 
-    print(property.MortgageValue("Boardwalk"))
+    #print(property.MortgageValue("Boardwalk"))
     property.BuyProperty("Boardwalk","kevin")
-
+    
 if __name__ == "__main__":
     print("To run Property class directly")
     main()

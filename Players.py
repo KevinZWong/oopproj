@@ -86,7 +86,7 @@ def main():
     player.addPlayer("kevin")
     player.setAmount("kevin", 1400)
     #print(player.getPlayerslist())
-        player = Players()
+    player = Players()
     player.addPlayer("guo")
     #player.listCurentPlayers()  
     #print("\n A")
