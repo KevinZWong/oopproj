@@ -1,10 +1,12 @@
 import json
-from Property import Property as Property 
+from Property import Property as Property
+from Players import Players 
 class Rent:
-    def __init__(self, jsonFilePath="./default_properties.json"):
+    def __init__(self, jsonFilePath="./Default/default_properties.json"):
         with open(jsonFilePath) as f:
             self.Properties = json.load(f)
-
+        self.player = Players()
+        self.player.loadPreviousSaveData()
 
     def __del__(self):
         with open("./SaveBeforeClose/SaveBeforeCloseRent.json", 'w') as json_file:
@@ -27,14 +29,23 @@ class Rent:
         return self.Properties[propertyName]["RentWithHotel"]
 
     def PayRent(self, Rentor, Rentee, price): # rentor is the person geting the money, rentee is the tenant
-
-
+        RentorAmount = self.player.getAmount(Rentor) 
+        RenteeAmount = self.player.getAmount(Rentee)
+        if RenteeAmount >= price:
+            RenteeAmount = RenteeAmount - price
+            self.player.setAmount(Rentee,RenteeAmount)
+            RentorAmount = RentorAmount + price
+            self.player.setAmount(Rentor, RentorAmount)
+        else:
+            print("Rentee Doesn't have enough money.")
+            return
         
 
 
 def main():
     property = Property()
-    print(property.MortgageValue("Boardwalk"))
+    rent = Rent()
+    rent.PayRent("kevin", "guo", 200)
 
 if __name__ == "__main__":
     print("To run Property class directly")
