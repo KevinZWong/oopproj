@@ -53,7 +53,7 @@ def main():
 
     #print(property.MortgageValue("Boardwalk"))
     property.BuyProperty("Boardwalk","kevin")
-    
+    print(property.getPrice("Boardwalk"))
 if __name__ == "__main__":
     print("To run Property class directly")
     main()

@@ -14,7 +14,7 @@ import json
 import copy
 
 
-'''
+
 class Players:
     def __init__(self):
         self.players = []
@@ -35,11 +35,7 @@ class Players:
             self.players = json.load(json_file)    
 
     def listCurentPlayers(self):
-        print("this.players = ", self.players)
 
-    def setAmount(self, playerName, newAmount):
-        for player in self.players:
-            if player["Name"] == playerName:
                 var1 = player["Amount"]
                 player["Amount"] = newAmount
 
@@ -155,8 +151,6 @@ print(player.getPlayerslist())
 
 
 
-
-'''
 
 
 

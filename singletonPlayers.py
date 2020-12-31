@@ -39,9 +39,9 @@ def main():
     playerObj1.listCurentPlayers()
 
     playerObj2 = SingletonPlayers.getInstance()
-    print("\n\nFollowing is playerObj2 print Out:")
-    playerObj2.listCurentPlayers()
-    playerObj2.addPlayer("odi")
+    print("\n\nlistCurentPlayers()
+    playerObj2.adFollowing is playerObj2 print Out:")
+    playerObj2.dPlayer("odi")
 
     print("\n\nFollowing is playerObj2 print Out:")
     playerObj2.listCurentPlayers()

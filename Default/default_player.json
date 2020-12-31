@@ -5,6 +5,7 @@
     "RollDiceOrder": 0,
     "JailStatus": 0,
     "Icon": 0,
-    "CurrentPosition": ""
+    "CurrentPosition": "",
+    "Rolls": [] 
 }
 

@@ -9,6 +9,10 @@ Players Class:
     def updateJailStatus(self, playerName, JailStatus):
     def updateIcon(self, playerName, icon):
     def updatePosition(self, playerName, position):
+    def getPosition(self, playerName):
+    def getRolls(self, playerName):
+    def addRolls(self, playerName, roll):
+    def setRolls(self, playerName, Lroll):
     def reorderPlayersAsItWasSet(self):
 Property Class:
     def getPrice(self, propertyName):
@@ -19,7 +23,17 @@ Property Class:
     def MortgageValue(self, propertyName):
     def UnmortgageValue(self, propertyName):
     def BuyProperty(self, propertyName, FutureOwner):
-Property Class:
+Rent Class:
+    def getRent(self, propertyName):
+    def getRentWithColorSet(self, propertyName):
+    def getRentWith1House(self, propertyName):
+    def getRentWith2House(self, propertyName):
+    def getRentWith3House(self, propertyName):
+    def getRentWith4House(self, propertyName):
+    def getRentWithHotel(self, propertyName):
+    def PayRent(self, Rentor, Rentee, price): # rentor is the person geting the money, rentee is the tenant
+
+
 
 
 

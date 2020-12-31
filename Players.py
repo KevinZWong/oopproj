@@ -1,15 +1,37 @@
 import json
 import copy
-
-
+import atexit
 
 class Players:
+    '''
+    __instance = None
+    @staticmethod 
+    def getInstance():
+        """ Static access method. """
+        if Players.__instance == None:
+            Players()
+        return Players.__instance
+    '''
     def __init__(self):
+        '''
+        """ Virtually private constructor. """
+        if Players.__instance != None:
+            raise Exception("This class is a singleton!")
+        else:
+            Players.__instance = self
+        '''
+
         self.players = []
+        atexit.register(self.__del__)
 
     def __del__(self):
+    #def saveBeforeClose(self):
+        print("del program called")
         with open("./SaveBeforeClose/SaveBeforeClosePlayers.json", 'w') as json_file:
+            print(self.players)
+            print("KEVIN")
             json.dump(self.players, json_file)
+        
 
     def addPlayer(self, playerName):
         with open("./Default/default_player.json") as f:
@@ -50,6 +72,13 @@ class Players:
             if player["Name"] == playerName:
                 player["RollDiceOrder"] = orderNum
 
+    '''    def PlayerRolling(self, playerList):
+            for i,player in enumerate(self.players):
+                if player["RollDiceOrder"] == playerList[i]:
+
+                if player["RollDiceOrder"] == playerList[i]:
+                    player["JailStatus"] = JailStatus
+    '''
     def updateJailStatus(self, playerName, JailStatus):
         for player in self.players:
             if player["Name"] == playerName:
@@ -59,6 +88,32 @@ class Players:
         for player in self.players:
             if player["Name"] == playerName:
                 player["Icon"] = icon
+
+    def updatePosition(self, playerName, position):
+        for player in self.players:
+            if player["Name"] == playerName:
+                player["CurrentPosition"] = position
+
+    def getPosition(self, playerName):
+        for player in self.players:
+            if player["Name"] == playerName:
+                return player["CurrentPosition"]
+
+
+
+    def getRolls(self, playerName):
+        for player in self.players:
+            if player["Name"] == playerName:
+                return player["Rolls"]
+    def addRolls(self, playerName, roll):
+        for player in self.players:
+            if player["Name"] == playerName:
+                player["Rolls"].append(roll)
+
+    def setRolls(self, playerName, Lroll):
+        for player in self.players:
+            if player["Name"] == playerName:
+                player["Rolls"] = Lroll
 
     def updatePosition(self, playerName, position):
         for player in self.players:
@@ -81,40 +136,20 @@ class Players:
     
 
 def main():
+
+    #player = Players.getInstance()
     player = Players()
-    #print("\n A")
     player.addPlayer("kevin")
     player.setAmount("kevin", 1400)
-    #print(player.getPlayerslist())
     player = Players()
-    player.addPlayer("guo")
-    #player.listCurentPlayers()  
-    #print("\n A")
+    player.addPlayer("guo") 
     player.addPlayer("alan")
-    #player.listCurentPlayers() 
-
-    #print("\n A")
     player.addPlayer("kevin")
-    #player.listCurentPlayers()
-
-
-    #print("\n B")
     player.updateRollDiceOrder("kevin", 1)
-    #player.listCurentPlayers()
-    #print("\n B")
-
     player.updateRollDiceOrder("alan", 2)
-    #player.listCurentPlayers()
-    #print("\n B")
-
     player.updateRollDiceOrder("guo", 3)
-    #player.listCurentPlayers()
-    #print("\n B")
-
-
-    #print("\n C")
     player.reorderPlayersAsItWasSet()
-    #print("\n C")
+
     #player.listCurentPlayers()
 
 
