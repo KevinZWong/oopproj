@@ -22,14 +22,11 @@ class Players:
         '''
 
         self.players = []
-        atexit.register(self.__del__)
+        atexit.register(self.saveBeforeClose)
 
-    def __del__(self):
-    #def saveBeforeClose(self):
-        print("del program called")
+
+    def saveBeforeClose(self):
         with open("./SaveBeforeClose/SaveBeforeClosePlayers.json", 'w') as json_file:
-            print(self.players)
-            print("KEVIN")
             json.dump(self.players, json_file)
         
 

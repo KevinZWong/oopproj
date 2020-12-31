@@ -5,6 +5,8 @@ import copy
 from Players import Players
 from Rent import Rent
 from Property import Property
+import time
+
 '''
 print("Decide the order?, or let the program do it")
 print("1. I'll do it the old fasion way. (roll dice)")
@@ -39,20 +41,108 @@ PositionList = ["GO","Mediterranean_Avenue","Community_Chest","Baltic_Avenue","I
 for i in range(0, len(PlayerNames),1):
     player.addPlayer(PlayerNames[i])
     player.updateRollDiceOrder(PlayerNames[i], i)
-    inputStr = "What is " + PlayerNames[i] + "'s Icon"
+    inputStr = "What is " + PlayerNames[i] + "'s Icon: "
     icon = str(input(inputStr))
     player.updateIcon(PlayerNames[i], icon)
 
 
 
-for i in PlayerNames:
-    player.
+class runningLoop:
+    def __init__(self):
+        self.count = 0
 
-Rolling = 0
-for i in range(0, len(PlayerNames),1):
+    def startLooping(self, loopingList):
+        
+        testCount = 0
+        while (self.count < len(loopingList)):
+            time.sleep(1) 
+            print("self.count =", self.count)
+
+            print("It is", loopingList[self.count], "'s turn")
+
+            PlayerRolling = loopingList[self.count]
+            mainInput = input("Enter your roll:")
+            player.addRolls(PlayerRolling,mainInput)
+            PlayerRolls = getRolls(PlayerRolling)
+            total = 0
+            for i in PlayerRolls:
+                total = total + i
+
+
+            '''
+            if testCount == 3: 
+                self.goBackCount(2)
+
+
+            if testCount == 9:
+                self.goForwardCount(1)
+            
+
+            if testCount == 12:
+                self.exitRunningLoop()
+            else:
+                testCount += 1            
+            
+            if self.count == len(loopingList) - 1:
+                self.count = 0
+            else:
+                self.count += 1
+            '''
+    def exitRunningLoop(self):
+        self.count = 999
+
+    def goBackCount(self, backCount):
+        self.count = self.count - backCount
+
+    def goForwardCount(self, forwardCount):
+        self.count = self.count + forwardCount
+
+
+def main():
+    PlayerNames = ["kevin", "Alan", "Odi", "Pam"]
+    obj = runningLoop()
+    obj.startLooping(PlayerNames)
 
 
 
-    Rolling += 1
 
 
+
+if __name__ == "__main__":
+    print("To run Players class directly")
+    main()
+else:
+    print("To run Players being imported")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '''
+
+PlayerRolling = "kevin"
+mainInput = input("Enter your roll:")
+player.addRolls(PlayerRolling,mainInput)
+PlayerRolls = getRolls(PlayerRolling)
+total = 0
+for i in PlayerRolls:
+    total = total + i
+
+
+'''
