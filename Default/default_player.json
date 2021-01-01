@@ -3,8 +3,8 @@
     "Amount": 0,
     "PropertyOwned": [],
     "RollDiceOrder": 0,
-    "JailStatus": 0,
-    "Icon": 0,
+    "JailStatus": "False",
+    "Icon":"",
     "CurrentPosition": "",
     "Rolls": [] 
 }

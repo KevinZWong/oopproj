@@ -1,14 +1,14 @@
 import json
 from Players import Players
-
+import atexit
 class Property:
     def __init__(self, jsonFilePath="./Default/default_properties.json"):
         with open(jsonFilePath) as f:
             self.Properties = json.load(f)
         self.player = Players()
         self.player.loadPreviousSaveData()
-
-    def __del__(self):
+        atexit.register(self.saveBeforeClose)
+    def saveBeforeClose(self):
         with open("./SaveBeforeClose/SaveBeforeCloseProperties.json", 'w') as json_file:
             json.dump(self.Properties, json_file)
 
@@ -26,6 +26,14 @@ class Property:
         with open(filePathName, 'w') as json_file:
             json.dump(self.Properties, json_file)
 
+    def getStatus(self, propertyName):
+        return self.Properties[propertyName]["Status"]
+    def setStatus(self, propertyName, newStatus):
+        self.Properties[propertyName]["Status"] = newStatus
+    def setHouses(self, propertyName, newHouses):
+        self.Properties[propertyName]["Houses"] = newHouses
+    def getHouses(self, propertyName):
+        return self.Properties[propertyName]["Houses"]
     def getHouseCost(self, propertyName):
         return self.Properties[propertyName]["HouseCost"]
     def MortgageValue(self, propertyName):

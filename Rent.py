@@ -1,14 +1,16 @@
 import json
 from Property import Property as Property
 from Players import Players 
+import atexit
 class Rent:
     def __init__(self, jsonFilePath="./Default/default_properties.json"):
         with open(jsonFilePath) as f:
             self.Properties = json.load(f)
         self.player = Players()
         self.player.loadPreviousSaveData()
+        atexit.register(self.saveBeforeClose)
 
-    def __del__(self):
+    def saveBeforeClose(self):
         with open("./SaveBeforeClose/SaveBeforeCloseRent.json", 'w') as json_file:
             json.dump(self.Properties, json_file)
 

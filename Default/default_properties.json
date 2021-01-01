@@ -12,6 +12,7 @@
         "RentWith3House": 90,
         "RentWith4House": 160,
         "RentWithHotel": 250,
+        "Houses": 0,
         "MortgageValue": 30,
         "UnmortgageValue": 33
     },
@@ -29,6 +30,7 @@
         "RentWith3House": 180,
         "RentWith4House": 320,
         "RentWithHotel": 450,
+        "Houses": 0,
         "MortgageValue": 30,
         "UnmortgageValue": 33
     },
@@ -46,6 +48,7 @@
         "RentWith3House": 270,
         "RentWith4House": 400,
         "RentWithHotel": 550,
+        "Houses": 0,
         "MortgageValue": 50,
         "UnmortgageValue": 55
     },
@@ -63,6 +66,7 @@
         "RentWith3House": 270,
         "RentWith4House": 400,
         "RentWithHotel": 550,
+        "Houses": 0,
         "MortgageValue": 50,
         "UnmortgageValue": 55
     },
@@ -80,6 +84,7 @@
         "RentWith3House": 300,
         "RentWith4House": 450,
         "RentWithHotel": 600,
+        "Houses": 0,
         "MortgageValue": 60,
         "UnmortgageValue": 66
     },
@@ -97,6 +102,7 @@
         "RentWith3House": 450,
         "RentWith4House": 625,
         "RentWithHotel": 750,
+        "Houses": 0,
         "MortgageValue": 70,
         "UnmortgageValue": 77
     },
@@ -114,6 +120,7 @@
         "RentWith3House": 450,
         "RentWith4House": 625,
         "RentWithHotel": 750,
+        "Houses": 0,
         "MortgageValue": 70,
         "UnmortgageValue": 77
     },
@@ -131,6 +138,7 @@
         "RentWith3House": 500,
         "RentWith4House": 700,
         "RentWithHotel": 900,
+        "Houses": 0,
         "MortgageValue": 80,
         "UnmortgageValue": 88
     },
@@ -148,6 +156,7 @@
         "RentWith3House": 550,
         "RentWith4House": 750,
         "RentWithHotel": 950,
+        "Houses": 0,
         "MortgageValue": 90,
         "UnmortgageValue": 99
     },
@@ -165,6 +174,7 @@
         "RentWith3House": 550,
         "RentWith4House": 750,
         "RentWithHotel": 950,
+        "Houses": 0,
         "MortgageValue": 90,
         "UnmortgageValue": 99
     },
@@ -182,6 +192,7 @@
         "RentWith3House": 600,
         "RentWith4House": 800,
         "RentWithHotel": 1000,
+        "Houses": 0,
         "MortgageValue": 100,
         "UnmortgageValue": 110
     },
@@ -199,6 +210,7 @@
         "RentWith3House": 700,
         "RentWith4House": 875,
         "RentWithHotel": 1050,
+        "Houses": 0,
         "MortgageValue": 110,
         "UnmortgageValue": 121
     },
@@ -216,6 +228,7 @@
         "RentWith3House": 700,
         "RentWith4House": 875,
         "RentWithHotel": 1050,
+        "Houses": 0,
         "MortgageValue": 110,
         "UnmortgageValue": 121
     },
@@ -233,6 +246,7 @@
         "RentWith3House": 750,
         "RentWith4House": 925,
         "RentWithHotel": 1100,
+        "Houses": 0,
         "MortgageValue": 120,
         "UnmortgageValue": 132
     },
@@ -250,6 +264,7 @@
         "RentWith3House": 800,
         "RentWith4House": 975,
         "RentWithHotel": 1150,
+        "Houses": 0,
         "MortgageValue": 130,
         "UnmortgageValue": 143
     },
@@ -267,6 +282,7 @@
         "RentWith3House": 800,
         "RentWith4House": 975,
         "RentWithHotel": 1150,
+        "Houses": 0,
         "MortgageValue": 130,
         "UnmortgageValue": 143
     },
@@ -284,6 +300,7 @@
         "RentWith3House": 850,
         "RentWith4House": 1025,
         "RentWithHotel": 1200,
+        "Houses": 0,
         "MortgageValue": 140,
         "UnmortgageValue": 154
     },
@@ -302,6 +319,7 @@
         "RentWith3House": 900,
         "RentWith4House": 1100,
         "RentWithHotel": 1275,
+        "Houses": 0,
         "MortgageValue": 150,
         "UnmortgageValue": 165
     },
@@ -319,6 +337,7 @@
         "RentWith3House": 900,
         "RentWith4House": 1100,
         "RentWithHotel": 1275,
+        "Houses": 0,
         "MortgageValue": 150,
         "UnmortgageValue": 165
     },
@@ -336,6 +355,7 @@
         "RentWith3House": 1000,
         "RentWith4House": 1200,
         "RentWithHotel": 1400,
+        "Houses": 0,
         "MortgageValue": 160,
         "UnmortgageValue": 176
     },
@@ -352,6 +372,7 @@
         "RentWith3House": 1100,
         "RentWith4House": 1300,
         "RentWithHotel": 1500,
+        "Houses": 0,
         "MortgageValue": 175,
         "UnmortgageValue": 193
     }, 
@@ -368,6 +389,7 @@
         "RentWith3House": 1400,
         "RentWith4House": 1700,
         "RentWithHotel": 2000,
+        "Houses": 0,
         "MortgageValue": 200,
         "UnmortgageValue": 220
     },
@@ -426,7 +448,7 @@
     "Water_Works": {
         "Status": 0,
         "Owner": "",
-        "Type": "Utility",
+        "Type": "UTILITY",
         "Price": 150,
         "Roll": 0,
         "RentWith1Utility": "roll * 4",
@@ -437,7 +459,7 @@
     "Electric_Company": {
         "Status": 0,
         "Owner": "",
-        "Type": "Utility",
+        "Type": "UTILITY",
         "Price": 150,
         "Roll": 0,
         "RentWith1Utility": "roll * 4",

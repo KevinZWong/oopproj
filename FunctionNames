@@ -19,6 +19,8 @@ Property Class:
     def setOwner(self, propertyName, owner):
     def getOwner(self, propertyName):
     def saveCurStateInJson(self, filePathName):
+    def getStatus(self, propertyName):
+    def setStatus(self, propertyName, newStatus):
     def getHouseCost(self, propertyName):
     def MortgageValue(self, propertyName):
     def UnmortgageValue(self, propertyName):
