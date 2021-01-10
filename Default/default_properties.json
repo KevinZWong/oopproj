@@ -459,12 +459,18 @@
     "Electric_Company": {
         "Status": 0,
         "Owner": "",
-        "Type": "UTILITY",
-        "Price": 150,
-        "Roll": 0,
-        "RentWith1Utility": "roll * 4",
-        "RentWith2Utility": "roll * 10",
-        "MortgageValue": 200,
-        "UnmortgageValue": 220
+        "Type": "BROWN",
+        "Price": 60,
+        "HouseCost": 50,
+        "Rent": 2,
+        "RentWithColorSet": 4,
+        "RentWith1House": 10,
+        "RentWith2House": 30,
+        "RentWith3House": 90,
+        "RentWith4House": 160,
+        "RentWithHotel": 250,
+        "Houses": 0,
+        "MortgageValue": 30,
+        "UnmortgageValue": 33
     }
 }
